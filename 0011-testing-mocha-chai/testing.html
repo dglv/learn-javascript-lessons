@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mocha Testing</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<!-- include Mocha styles to render results-->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+  	<!-- include Mocha library -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+  	<!-- set up Mocha to enable Behavior Driven Development testing -->
+  	<script>
+    	mocha.setup('bdd');
+  	</script>
+
+  	<!-- add Chai library -->
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+</head>
+<body>
+	
+	<!-- add script with target function -->
+  	<script src="./js/target-func.js"></script>
+
+	<!-- add script with specs -->
+  	<script src="./js/tests.js"></script>
+
+  	<!-- The test results will be provided inside the div block with id="mocha" -->
+  	<div id="mocha"></div>
+
+  	<!-- run tests! -->
+  	<script>
+    	mocha.run();
+  	</script>
+</body>
+</html>
