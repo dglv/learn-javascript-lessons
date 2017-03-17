@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy Objects Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+
+	</script>
+	<script type="text/javascript">
+		var user = {
+			name: 'Valery',
+			age: 25,
+			position: 'developer'
+		}
+
+		var clone = {};
+
+		for(var key in user){
+			clone[key] = user[key];
+		}
+
+		clone.name = 'Clone!';
+
+		// User`s name was not changed
+		alert('user: ' + getFullInfo(user));
+		alert('clone: ' + getFullInfo(clone));
+
+		function getFullInfo(person){
+	 		var result = person.name + ', ';
+	 		result = result + person.age + ', ';
+	 		result = result + person.position + ', ';
+
+	 		return result;
+	 	}
+	</script>
+</body>
+</html>

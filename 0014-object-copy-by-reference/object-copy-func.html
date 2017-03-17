@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy Objects Example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		var user = {
+			name: 'Valery'
+		}
+
+		changeMyName(user);
+
+		// User`s name is Admin! now
+		alert(user.name);
+
+		function changeMyName(user){
+			var admin = user;
+
+			admin.name = 'Admin!';
+		}
+	</script>
+</body>
+</html>
