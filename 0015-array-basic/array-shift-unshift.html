@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array: push and pop example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<p>Select "Console" in the debugger menu. Then click Run again</p>
+	<script type="text/javascript">
+		var array = ['cat', 'dog', 5];
+
+		// Array [ "cat", "dog", 5 ], length = 3
+		console.log(array);
+		console.log('array length: ' + array.length);
+
+		array.unshift('horse', 25);
+		
+		// Array [ "horse", 25, "cat", "dog", 5 ], length = 5
+		console.log(array);
+		console.log('array length: ' + array.length);
+
+		// get "horse"
+		var horse = array.shift();
+		array.shift();
+		array.shift();
+
+		//Array [ "dog", 5 ], length: 2
+		console.log(horse);
+		console.log(array);
+		console.log('array length: ' + array.length);
+	</script>
+</body>
+</html>
