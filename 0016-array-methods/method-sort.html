@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An example of the sort() method</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = [5, 12, 1, 23, 42, 0, -5, 98, 31, 1];
+
+		var sorted = arr.slice().sort(function(a, b){
+			return a - b;
+		});
+
+		alert('init array: ' + arr + '\nsorted array:' + sorted);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An example of the splice() method</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = [1, 2, 5];
+		arr.splice(-1, 0, 3, 4);
+		// 1,2,3,4,5
+		alert( arr ); // результат: 1,2,3,4,5
+
+
+		var initArray = ['John', 'is', 'a', 'JAVA', 'developer'];
+
+		var firstArray = getClonedArray(initArray);
+		firstArray.splice(3, 1);
+		// John is a _ developer
+		alert(firstArray);
+
+
+		var secondArray = getClonedArray(initArray);
+		secondArray.splice(3, 1, '.NET');
+		// John is a .NET developer
+		alert(secondArray);
+
+
+		var thirdArray = getClonedArray(initArray);
+		thirdArray.splice(0, 2);
+		// a JAVA developer
+		alert(thirdArray);
+
+
+		var fourth = getClonedArray(initArray);
+		fourth.splice(2, 1, 'the', 'famous');
+		// John is the famous JAVA developer
+		alert(fourth);
+
+		function getClonedArray(initArray){
+			var cloned = [];
+
+			for(var key in initArray){
+				cloned[key] = initArray[key];
+			}
+
+			return cloned;
+		}
+	</script>
+
+</body>
+</html>

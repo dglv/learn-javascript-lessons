@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An example of the slice() method</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+		var initArray = ['John', 'is', 'a', 'JAVA', 'developer'];
+
+		//begin index, end index (not include)
+		var firstArray = initArray.slice(2, 5);
+		// a JAVA developer
+		alert(firstArray);
+
+
+		var secondArray = initArray.slice(3);
+		// JAVA developer
+		alert(secondArray);
+
+		var fullCopy = initArray.slice();
+		// John is a JAVA developer
+		alert(fullCopy);
+
+	</script>
+
+</body>
+</html>
