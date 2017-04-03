@@ -13,6 +13,9 @@ console.log('typeof \'foo\': ', typeof 'foo');
 // "object"
 console.log('typeof {}: ', typeof {});
 
+// "object"
+console.log('typeof []: ', typeof []);
+
 //typeof null == "object" but should be null
 console.log('typeof null: ', typeof null);
 
