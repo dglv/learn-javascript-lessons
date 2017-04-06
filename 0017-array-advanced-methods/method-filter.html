@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>filter() method example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = ['Volvo', 'GMS', 'Ford', 'Toyota', 'Volkswagen'];
+		console.log('init array:' + arr);
+
+		//[Volvo,Volkswagen]
+		var filtered = arr.filter( function(item){
+			return item.includes('ol');
+		} );
+		console.log('filtered array:' + filtered);
+
+	</script>
+
+</body>
+</html>
